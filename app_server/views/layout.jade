@@ -7,6 +7,29 @@ html
     link(rel='stylesheet', href='/bootstrap/css/bootstrap.css')
     link(rel='stylesheet', href='/stylesheets/style.css')
   body
-    block content
-    script(src='/javascript/jquery-3.3.1.min.js')
+    //Header
+    nav.navbar.navbar-expand-lg.navbar-dark.bg-primary
+      a.navbar-brand(href='/') Loc8r
+      button.navbar-toggler(type="button", data-toggle="collapse", data-target="#navbarColor01", aria-controls="navbarColor01", aria-expanded="false", aria-label="Toggle navigation")
+        span.navbar-toggler-icon
+      #navbarColor01.collapse.navbar-collapse
+        ul.navbar-nav.mr-auto
+          li.nav-item.active
+            a.nav-link(href='/') Home
+          li.nav-item
+            a.nav-link(href='/about') About Loc8r
+
+
+    .container
+      block content
+
+    footer
+      .container
+        .row
+          .col-xs-12
+            small &copy; A.P. 2018
+
+
+        //SCRIPTS
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js')
     script(src='/bootstrap/js/bootstrap.min.js')
