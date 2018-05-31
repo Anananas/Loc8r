@@ -1,0 +1,83 @@
+extends layout
+
+block content
+  .row.page-header
+    .col-lg-8
+      h1 Starcups
+  .row
+    .col-xs-12.col-md-9
+      .row
+        .col-xs-12.col-md-7
+          p.rating
+            span.glyphicon.glyphicon-star
+            span.glyphicon.glyphicon-star
+            span.glyphicon.glyphicon-star
+            span.glyphicon.glyphicon-star-empty
+            span.glyphicon.glyphicon-star-empty
+          p 125 Hight Streer, Reading, RG6 1PS
+          .card.text-white.bg-info.mb-3.rewiev-panel
+            .card-header
+              h2.card-title Opening hours
+            .card-body
+              p Mon-Fri : 7:00 am - 5:00 pm
+              p Saturday : 8:00 am - 5:00 pm
+              p Sunday : closed
+          .card.text-white.bg-info.mb-3.rewiev-panel
+            .card-header
+              h2.card-title Facilities
+            .card-body
+              span.label.label-warning
+                span.glyphicon.glyphicon-ok
+                  | &nbsp;Hot drinks
+                br
+                span.glyphicon.glyphicon-ok
+                  | &nbsp;Food
+                br
+                span.glyphicon.glyphicon-ok
+                  | &nbsp;Premium WiFi
+
+
+        .col-xs-12.col-md-5.location-map
+          .panel.panel-primary
+            .panel-heading
+              h2.panel-title Location map
+            .panel-body
+              img.img-responsive.img-rounded(src='http://rightblog.ru/wp-content/uploads/2016/07/google_maps_rightblog.ru-04.png')
+  .last
+    .col-xs-12
+      a.btn.btn-primary.btn-lg.btn-block(href='/location/review/new') Add review
+      br
+      .card.bg-default.mb-3.rewiev-panel
+        .card-header
+          h3 All review
+        .list-group.review-container
+          .list-group-item.list-group-item-action.flex-column.align-items-start
+            .d-flex.w-100.justify-content-between.review
+              h5.mb-1.review-header
+                span.review-author A.Pol
+                span.rating
+                  span.glyphicon.glyphicon-star
+                    span.glyphicon.glyphicon-star
+                    span.glyphicon.glyphicon-star
+                    span.glyphicon.glyphicon-star
+                    span.glyphicon.glyphicon-star
+
+              small.review-time 30 May 2018
+            p.mb-1 What a great place. I can't say enough good things about it.
+          .list-group-item.list-group-item-action.flex-column.align-items-start
+            .d-flex.w-100.justify-content-between.review
+              h5.mb-1.review-header
+                span.review-author A.Pol
+                span.rating
+                  span.glyphicon.glyphicon-star
+                    span.glyphicon.glyphicon-star
+                    span.glyphicon.glyphicon-star
+                    span.glyphicon.glyphicon-star
+                    span.glyphicon.glyphicon-star
+
+              small.review-time 30 May 2018
+            p.mb-1 What a great place. I can't say enough good things about it.
+    .col-xs-12
+      p.lead Simon's cafe is on Loc8r because it has accessible wifi and place to sit down with your laptop and get some work done.
+      p If you've been and you like it - or if you don't -please leave a review to help other people just like you
+

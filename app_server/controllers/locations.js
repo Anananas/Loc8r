@@ -5,11 +5,10 @@ module.exports.homeList = function(req, res, next){
 
 // Location info url
 module.exports.locationInfo = function(req, res, next){
-    res.render('index', {title: 'Location info'});
+    res.render('location-info', {title: 'Location info'});
 };
-
 
 // Adding new review url
 module.exports.addReview = function(req, res, next){
-    res.render('index', {title: 'New review'});
+    res.render('location-review-form', {title: 'New review'});
 };
